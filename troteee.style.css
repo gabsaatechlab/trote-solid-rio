@@ -1,0 +1,141 @@
+
+        /*Zera margens padrão do navegador*/
+        *, *::before, *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        }
+
+        /*Define a cor de fundo da página*/
+        body {
+            /*Define altura da página*/
+        min-height: 100vh;
+        background: #1a3a8f;
+            /*Define o FlexBox como layou da página*/
+        display: flex;
+                /* Centralizar na vertical*/
+        align-items: center;
+        /*Centralizar na horizontal*/
+        justify-content: center;
+        font-family: 'Nunito', sans-serif;
+        padding: 2rem;
+        }
+
+        /*O card branco central, o ponto referencia a class*/
+        .card {
+        background: #fff;
+        border-radius: 28px;
+        padding: 2.5rem 2rem 2rem;
+        max-width: 360px;
+        width: 100%;
+        text-align: center;
+        box-shadow: 0 30px 80px rgba(0,0,0,0.35);
+        animation: fadeUp 0.7s ease both;
+        }
+
+        background: linear-gradient(135deg, #f97316, #ef4444);
+        /*Cor do texto*/
+        color: white;
+        border-radius: 10px;
+        /* 10px é em cima e em baixo e 20px é na esquerda e direita */
+        padding: 10px 20px;
+        /* sem borda */
+        border: none;
+
+        /*Animação de entrada ao website*/
+        @keyframes fadeUp {
+        from { opacity: 0; transform: translateY(30px); }
+        to   { opacity: 1; transform: translateY(0); }
+        }
+
+        /*Título principal*/
+        .card h1 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 900;
+        font-size: 2rem;
+        color: #1a3a8f;
+        line-height: 1.1;
+        margin-bottom: .5rem;
+        }
+
+        /*Subtítulo cinza*/
+        .card .subtitle {
+        font-size: .9rem;
+        color: #6b7280;
+        margin-bottom: 1.8rem;
+        }
+
+        /*Título:"O que teremos:"*/
+        .section-title {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: 1.05rem;
+        color: #111827;
+        margin-bottom: 1.2rem;
+        }
+
+        /*Lista de itens*/
+        .items {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: .75rem;
+        margin-bottom: 2rem;
+        }
+
+        /*Cada item da lista*/
+        .items li {
+        display: flex;
+        align-items: center;
+        gap: .75rem;
+        background: #f0f4ff;
+        border-radius: 12px;
+        padding: .75rem 1rem;
+        font-size: .95rem;
+        color: #1e293b;
+        font-weight: 600;
+        animation: fadeUp 0.7s ease both;
+        }
+
+        /*Atraso na animação de cada item */
+        .items li:nth-child(1) { animation-delay: .15s; }
+        .items li:nth-child(2) { animation-delay: .25s; }
+        .items li:nth-child(3) { animation-delay: .35s; }
+
+        /*Tamanho do emoji*/
+        .items li .icon {
+        font-size: 1.4rem;
+        flex-shrink: 0;
+        }
+
+        /*Botão principal laranja*/
+        .cta {
+        display: inline-block;
+        background: linear-gradient(135deg, #2d16f9, #ef4444);
+        color: #fff;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: 1rem;
+        padding: .85rem 2.5rem;
+        border-radius: 50px;
+        border: none;
+        cursor: pointer;
+        box-shadow: 0 8px 24px rgba(239,68,68,.4);
+        text-decoration: none;
+        transition: transform .2s, box-shadow .2s;
+        letter-spacing: .02em;
+        margin-bottom: 1.2rem;
+        }
+
+        /*Cor quando o mouse passa por cima do botão*/
+        .cta:hover {
+        transform: translateY(-3px) scale(1.03);
+        box-shadow: 0 14px 32px rgba(239,68,68,.5);
+        background: linear-gradient(135deg, #8044ef, #1640f9);
+        }
+        
+        /*Texto de rodapé*/
+        .realizacao {
+        font-size: .78rem;
+        color: #9ca3af;
+        }
